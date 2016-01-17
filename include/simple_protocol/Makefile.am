@@ -1,0 +1,2 @@
+AM_LDFLAGS = -pthread
+AM_CFLAGS = -O2 -Wall -DNDEBUG

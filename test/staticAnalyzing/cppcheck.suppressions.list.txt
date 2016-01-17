@@ -1,0 +1,9 @@
+memsetZeroBytes:../../src/utils/list/list_dlinked.c:44
+memsetZeroBytes:../../src/utils/list/list_dlinked.c:106
+
+memsetZeroBytes:../../src/utils/list/list_array.c:159
+memsetZeroBytes:../../src/utils/list/list_array.c:315
+
+memsetZeroBytes:../../src/utils/list/list_stlinked.c:106
+memsetZeroBytes:../../src/utils/list/list_stlinked.c:168
+memsetZeroBytes:../../src/utils/list/list_stlinked.c:285
