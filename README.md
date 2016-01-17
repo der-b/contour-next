@@ -13,7 +13,15 @@ compiling:
 ./configure
 make
 
-plugin the device and run:
+to access the device one needs either root privileges or you can add a new udev rule. For example you can create a new group:
+
+groupadd --system glucometer
+
+create a new udev rule in "/etc/udev/rules.d/30-glucometer.rules" containing following line:
+
+ACTION=="add", KERNEL=="hiddev\*", ATTRS{idVendor}=="1a79", ATTRS{idProduct}=="7410", GROUP="glucometer", MODE="0660"
+
+as long as the user is member of the gorup glucometer you can run the tool with:
 
 ./src/contour-next-usb/contour-next
 
